@@ -1,0 +1,51 @@
+/* 
+Estilos da página index.html
+*/
+.p2 {
+    background-color: bisque;
+}
+.center {
+    text-align: center;
+}
+.container{
+    display: flex;
+    /* quebra linha para baixo */
+    flex-flow: row wrap;
+    justify-content: start;
+    /* alinha os itens */
+    align-items: center;
+    margin: 30px;
+}
+#menu li{
+    display: inline;
+    /* espaçamento interno */
+    padding: 20px;
+    font-size: 20px;
+}
+#menu li a{
+    /*tira a decoração do texto  */
+    text-decoration: none;
+    color: black;
+}
+/* Ao passar mouse em cima fica com a cor escolhida */
+#menu li a:hover{
+    color: gray;
+}
+.musica{
+    display: flex;
+    justify-content: center;
+}
+
+
+/* 
+Estilos da página contato.html
+*/
+.contato {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.minha_foto{
+    border-radius: 50%;
+}
+
+

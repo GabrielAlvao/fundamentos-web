@@ -5,13 +5,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meu Perfil</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- inserindo css no head, # faz referencia há um id, . faz referencia a classe 
+    <style>
+        #p1{
+            background: brown;
+        }
+        .p2{
+            background-color: bisque;
+        }
+        .center{
+            text-align: center;
+        }
+    </style>
+    -->
 </head>
 <body>
     <!-- ul-lista desordenada
     li-lista os itens
     a href-torna clicavel e direciona pro link
     target="_blank"-faz ir pra outra pagina -->
-    <ul>
+    <ul id="menu">
         <li>
             <a href="index.html">Home</a>   
         </li>
@@ -19,36 +33,37 @@
             <a href="contato.html">Contato</a>
         </li>
     </ul>
-    <ol>
-        <li></li>
-        <li></li>
-    </ol>
-
-
     <!-- testo principal do código, titulo no body -->
-    <h1>Sobre o Gabriel</h1>
-    <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-    </p>
-    <p> dolorum earum quam maiores omnis nulla, veniam maxime aliquam sed dolor
-
-    </p> 
-    <p>
-        fuga est eius repudiandae aperiam quos excepturi neque ipsum eaque.
-    </p>
-    <!-- src é o local da imagem e alt é a informação da imagem para pesquisas e cegos -->
-    <img src="assets/img/Minha foto.jpg" alt="Foto do criador do conteudo">
-
-    <!-- pedaço de site dentro de outro (iframe) -->
-    <iframe 
-        width="560" 
-        height="315" 
-        src="https://www.youtube.com/embed/X4d5W1Fz53Y"
-        title="YouTube video player" 
-        frameborder="0" 
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
-        gyroscope; picture-in-picture"
-        allowfullscreen
-        ></iframe>
-</body>
+    <h1 class="center">Sobre o Gabriel</h1>
+    <div class="container">
+        <div>
+              <!-- src é o local da imagem e alt é a informação da imagem para pesquisas e cegos -->
+              <img class="minha_foto"src="assets/img/Minha_foto.jpg" alt="Foto do criador do conteudo">
+        </div>
+        <div>          
+            <p style="font-size: 26px;">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            </p>
+            <p id="p1"class="center"> dolorum earum quam maiores omnis nulla, veniam maxime aliquam sed dolor
+                
+            </p> 
+            <p class="center">
+                fuga est eius repudiandae aperiam quos excepturi neque ipsum eaque.
+            </p>
+        </div>
+    </div>
+        <div class="center">
+        <p style="font-size: 30px;">Música favorita</p>
+        <!-- pedaço de site dentro de outro (iframe) -->
+        <iframe  
+            width="560" 
+            height="315" 
+            src="https://www.youtube.com/embed/sKj5Fst0JlQ"
+            title="YouTube video player" 
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen>
+        </iframe>
+        </div>
+    </body>
 </html>
