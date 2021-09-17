@@ -8,9 +8,9 @@ Estilos da página index.html
     text-align: center;
 }
 .container{
-    display: flex;
+    display: inline-flex;
     /* quebra linha para baixo */
-    flex-flow: row wrap;
+    flex-flow: row;
     justify-content: start;
     /* alinha os itens */
     align-items: center;
@@ -25,7 +25,7 @@ Estilos da página index.html
 #menu li a{
     /*tira a decoração do texto  */
     text-decoration: none;
-    color: black;
+    color: rgb(0, 0, 0);
 }
 /* Ao passar mouse em cima fica com a cor escolhida */
 #menu li a:hover{
@@ -46,6 +46,7 @@ Estilos da página contato.html
 }
 .minha_foto{
     border-radius: 50%;
+    margin: 30px;
 }
 
 
