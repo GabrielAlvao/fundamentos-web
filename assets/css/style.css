@@ -1,52 +1,74 @@
 /* 
 Estilos da página index.html
 */
+body{
+    /* fundo da página */
+    background: #323538;
+    /* cor da letra */
+    color: #f4f4f4;
+}
 .p2 {
     background-color: bisque;
 }
 .center {
     text-align: center;
 }
+.justify{
+    text-align: justify;
+    font-size: 26px;
+}
 .container{
-    display: inline-flex;
+    display: flex;
     /* quebra linha para baixo */
     flex-flow: row;
-    justify-content: start;
-    /* alinha os itens */
+    justify-content: center;
     align-items: center;
-    margin: 30px;
+ 
 }
 #menu li{
     display: inline;
     /* espaçamento interno */
     padding: 20px;
-    font-size: 20px;
+    font-size: 25px;
 }
 #menu li a{
     /*tira a decoração do texto  */
     text-decoration: none;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
 }
 /* Ao passar mouse em cima fica com a cor escolhida */
 #menu li a:hover{
-    color: gray;
+    color: rgb(105, 103, 103);
 }
 .musica{
     display: flex;
     justify-content: center;
 }
+.tm-social{
+    width: 50px;
+    height: 50px;
+    padding: 30px;
 
+}
+.mb-50{
+    margin-bottom: 50px;
+}
 
 /* 
 Estilos da página contato.html
 */
 .contato {
-    margin-top: 10px;
-    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 .minha_foto{
     border-radius: 50%;
     margin: 30px;
+}
+.ml-50{
+    margin-left: 100px;
 }
 
 

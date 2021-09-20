@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-    <h1>Entre em contato comigo</h1>
     <ul id="menu">
         <li>
             <a href="index.html">Home</a>   
@@ -17,28 +16,64 @@
             <a href="contato.html">Contato</a>
         </li>
     </ul>
-    <form>
-        <div class="contato">
-            <label for="nome">Nome:</label>
-            <input type="text" id="nome">
-        </div>
-        <div class="contato">
-            <label for="email">E-mail:</label>
-            <input type="email" id="email">
-        </div>
-        <div class="contato">
-            <label for="assunto">Assunto:</label>
-            <textarea name="assunto" id="assunto" cols="30" rows="10"></textarea>
-        </div>
+    <h1 class="center">Entre em contato comigo</h1>
+    <div class="container mb-50">
         <div>
-            <button>Enviar</button>
+            <h2>Mande uma mensagem</h2>
+            <form>
+                
+                <div class="contato">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" onkeyup="validaNome()">
+                 <div id="txtNome"></div>   
+                </div>
+                <div class="contato">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" onkeyup="validaEmail()">
+                    <div id="txtEmail"></div>
+                </div>
+                <div class="contato">
+                    <label for="assunto">Assunto:</label>
+                    <textarea name="assunto" id="assunto" cols="30" rows="10" onkeyup="validaAssunto()"></textarea>
+                    <div id="txtAssunto"></div>
+                </div>
+                <button onclick="enviar()">Enviar</button>
+                
+                
+            </form>
         </div>
-    </form>
-    <h2>Endereço:</h2>
-    <p>Brasilio Machado,533</p>
-    <p>São Bernardo do Campo - SP</p>
-
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3652.793161858788!2d-46.54656888501918!3d-23.719079284604753!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce4190639a1f2d%3A0x5857c217de8e685d!2sR.%20Bras%C3%ADlio%20Machado%2C%20533%20-%20Centro%2C%20S%C3%A3o%20Bernardo%20do%20Campo%20-%20SP%2C%2009715-140!5e0!3m2!1spt-BR!2sbr!4v1631812432705!5m2!1spt-BR!2sbr" width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-
+        <div class="ml-50">
+            <h2>Endereço:</h2>
+            <p>Brasilio Machado,533</p>
+            <p>São Bernardo do Campo - SP</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3652.793161858788!2d-46.54656888501918!3d-23.719079284604753!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce4190639a1f2d%3A0x5857c217de8e685d!2sR.%20Bras%C3%ADlio%20Machado%2C%20533%20-%20Centro%2C%20S%C3%A3o%20Bernardo%20do%20Campo%20-%20SP%2C%2009715-140!5e0!3m2!1spt-BR!2sbr!4v1631812432705!5m2!1spt-BR!2sbr" 
+            width="400" height="250" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            id="mapa"
+            onmousemove="mapaZoom()"
+            onmouseout="mapaNormal()"></iframe>
+        </div>
+    </div>
+    <footer>
+        <hr>
+        <div class="container" >
+            <a href="https://www.linkedin.com/in/gabriel-alves-7362061bb/" target="_blank">
+            <img class="tm-social" src="assets/img/174857.png" alt="Logo do Linkedin">
+            </a>
+            <a href="https://github.com/GabrielAlvao" target="_blank">
+            <img class="tm-social" src="assets/img/Github.png" alt="Logo do Github">
+            </a>
+        </div>
+        <!-- separa a seção -->
+       
+        <p class="center">
+            Todos os direitos reservados: Gabriel Alves &copy;
+        </p>
+    </footer>
+    <script src="assets/js/script.js">
+    
+    </script>
 </body>
 </html>
